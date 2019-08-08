@@ -98,7 +98,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var at_ui_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(at_ui_style__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _pages_index_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(56);
 /* harmony import */ var _pages_docs_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(73);
-/* harmony import */ var _pages_guide_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(262);
+/* harmony import */ var _pages_guide_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(264);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -3025,9 +3025,9 @@ var warning = function() {};
 if (__DEV__) {
   var printWarning = function printWarning(format, args) {
     var len = arguments.length;
-    args = new Array(len > 2 ? len - 2 : 0);
-    for (var key = 2; key < len; key++) {
-      args[key - 2] = arguments[key];
+    args = new Array(len > 1 ? len - 1 : 0);
+    for (var key = 1; key < len; key++) {
+      args[key - 1] = arguments[key];
     }
     var argIndex = 0;
     var message = 'Warning: ' +
@@ -8332,7 +8332,10 @@ function (_Nerv$Component) {
       }, nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null, nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
         activeClassName: "router-link-active",
         to: "/docs/introduction"
-      }, "\u7EC4\u4EF6")), nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null, nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
+      }, "\u7EC4\u4EF6")), nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null, nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
+        activeClassName: "router-link-active",
+        to: "/docs/resource"
+      }, "\u8BBE\u8BA1\u8D44\u6E90")), nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null, nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
         href: "https://nervjs.github.io/taro-ui-theme-preview/",
         target: "__blank"
       }, "\u4E3B\u9898\u751F\u6210\u5668")), nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null, nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
@@ -10889,7 +10892,7 @@ exports.push([module.i, "/**\n * Default Variables\n */\n/* Prefix */\n/* The Co
 /* 88 */
 /***/ (function(module, exports) {
 
-module.exports = {"components":[{"title":"综述","name":"Docs","items":[{"title":"介绍","name":"Introduction"},{"title":"快速上手","name":"Quickstart"},{"title":"自定义主题","name":"CustomizeTheme"},{"title":"常见问题","name":"Questions"},{"title":"更新日志","name":"Changelog"}]},{"title":"组件","name":"Docs","groups":[{"title":"基础组件","items":[{"title":"图标","name":"Icon"},{"title":"按钮","name":"Button"},{"title":"浮动按钮","name":"Fab"}]},{"title":"视图组件","items":[{"title":"头像","name":"Avatar"},{"title":"文章样式","name":"Article"},{"title":"徽标","name":"Badge"},{"title":"倒计时","name":"Countdown"},{"title":"幕帘","name":"Curtain"},{"title":"页面提示","name":"LoadMore"},{"title":"通告栏","name":"Noticebar"},{"title":"标签","name":"Tag"},{"title":"时间轴","name":"Timeline"},{"title":"滑动视图容器","name":"Swiper"},{"title":"分隔符","name":"Divider"},{"title":"步骤条","name":"Steps"}]},{"title":"操作反馈","items":[{"title":"动作面板","name":"ActionSheet"},{"title":"活动指示器","name":"ActivityIndicator"},{"title":"模态框","name":"Modal"},{"title":"进度条","name":"Progress"},{"title":"轻提示","name":"Toast"},{"title":"滑动操作","name":"SwipeAction"},{"title":"消息通知","name":"Message"}]},{"title":"表单组件","items":[{"title":"表单","name":"Form"},{"title":"输入框","name":"Input"},{"title":"数字输入框","name":"InputNumber"},{"title":"单选按钮","name":"Radio"},{"title":"多选框","name":"Checkbox"},{"title":"评分","name":"Rate"},{"title":"开关","name":"Switch"},{"title":"多行文本框","name":"Textarea"},{"title":"选择器","name":"Picker"},{"title":"搜索栏","name":"SearchBar"},{"title":"滑动条","name":"Slider"},{"title":"图片选择器","name":"ImagePicker"},{"title":"范围选择器","name":"Range"}]},{"title":"布局组件","items":[{"title":"弹性布局","name":"Flex"},{"title":"栅格布局","name":"Grid"},{"title":"列表","name":"List"},{"title":"卡片","name":"Card"},{"title":"浮动弹层","name":"FloatLayout"},{"title":"手风琴","name":"Accordion"}]},{"title":"导航组件","items":[{"title":"导航栏","name":"NavBar"},{"title":"标签栏","name":"TabBar"},{"title":"标签页","name":"Tabs"},{"title":"分段器","name":"SegmentedControl"},{"title":"分页器","name":"Pagination"},{"title":"抽屉","name":"Drawer"},{"title":"索引选择器","name":"Indexes"}]},{"title":"高阶组件","items":[{"title":"日历","name":"Calendar"}]}]}]}
+module.exports = {"components":[{"title":"综述","name":"Docs","items":[{"title":"介绍","name":"Introduction"},{"title":"快速上手","name":"Quickstart"},{"title":"自定义主题","name":"CustomizeTheme"},{"title":"常见问题","name":"Questions"},{"title":"更新日志","name":"Changelog"},{"title":"设计资源","name":"Resource"}]},{"title":"组件","name":"Docs","groups":[{"title":"基础组件","items":[{"title":"图标","name":"Icon"},{"title":"按钮","name":"Button"},{"title":"浮动按钮","name":"Fab"}]},{"title":"视图组件","items":[{"title":"头像","name":"Avatar"},{"title":"文章样式","name":"Article"},{"title":"徽标","name":"Badge"},{"title":"倒计时","name":"Countdown"},{"title":"幕帘","name":"Curtain"},{"title":"页面提示","name":"LoadMore"},{"title":"通告栏","name":"Noticebar"},{"title":"标签","name":"Tag"},{"title":"时间轴","name":"Timeline"},{"title":"滑动视图容器","name":"Swiper"},{"title":"分隔符","name":"Divider"},{"title":"步骤条","name":"Steps"}]},{"title":"操作反馈","items":[{"title":"动作面板","name":"ActionSheet"},{"title":"活动指示器","name":"ActivityIndicator"},{"title":"模态框","name":"Modal"},{"title":"进度条","name":"Progress"},{"title":"轻提示","name":"Toast"},{"title":"滑动操作","name":"SwipeAction"},{"title":"消息通知","name":"Message"}]},{"title":"表单组件","items":[{"title":"表单","name":"Form"},{"title":"输入框","name":"Input"},{"title":"数字输入框","name":"InputNumber"},{"title":"单选按钮","name":"Radio"},{"title":"多选框","name":"Checkbox"},{"title":"评分","name":"Rate"},{"title":"开关","name":"Switch"},{"title":"多行文本框","name":"Textarea"},{"title":"选择器","name":"Picker"},{"title":"搜索栏","name":"SearchBar"},{"title":"滑动条","name":"Slider"},{"title":"图片选择器","name":"ImagePicker"},{"title":"范围选择器","name":"Range"}]},{"title":"布局组件","items":[{"title":"弹性布局","name":"Flex"},{"title":"栅格布局","name":"Grid"},{"title":"列表","name":"List"},{"title":"卡片","name":"Card"},{"title":"浮动弹层","name":"FloatLayout"},{"title":"手风琴","name":"Accordion"}]},{"title":"导航组件","items":[{"title":"导航栏","name":"NavBar"},{"title":"标签栏","name":"TabBar"},{"title":"标签页","name":"Tabs"},{"title":"分段器","name":"SegmentedControl"},{"title":"分页器","name":"Pagination"},{"title":"抽屉","name":"Drawer"},{"title":"索引选择器","name":"Indexes"}]},{"title":"高阶组件","items":[{"title":"日历","name":"Calendar"}]}]}]}
 
 /***/ }),
 /* 89 */
@@ -10982,7 +10985,7 @@ exports = module.exports = __webpack_require__(49)(false);
 exports.i(__webpack_require__(92), "");
 
 // module
-exports.push([module.i, "/**\n * Variables\n */\n/**\n * Default Variables\n */\n/**\n * Mixins\n */\n/* library */\n/**\n * BEM Mixins\n * From https://github.com/alphasights/paint/blob/812fb33c54a50277071f547a3e191cf5fe4fcb3f/styles/tools/_bem.scss\n */\n/**\n * @example scss\n *\n * .element {\n *   @include clearfix;\n * }\n *\n * // CSS Output\n * .element::after {\n *   clear: both;\n *   content: '';\n *   display: block;\n * }\n */\n/**\n * Truncate text and add an ellipsis to represent overflow\n *\n * @param {number} $width [Default 100%]\n * @param {string} $display [Default inline-block] [Sets the display-value of the element]\n */\n/**\n * Hides text to show a background image(a logo, for example)\n *\n * @example\n *   .element {\n *     @include hide-text;\n *   }\n *\n *   // CSS Output\n *   .element {\n *     overflow: hidden;\n *     text-indent: 101%;\n *     white-space: nowrap;\n *   }\n */\n/**\n * Set width and height in a single statement\n *\n * @param {number (with unit) | string} $width\n * @param {number (with unit) | string} $height [default $width]\n */\n/**\n * Mixes a color with white. It's different from lighten()\n *\n * @param {color} $color\n * @param {number (percentage)} $percent [The amout of white to be mixed in]\n * @return {color}\n *\n * @example\n *   .element {\n *     background-color: tint(#6ecaa6 , 40%);\n *   }\n *\n *   // CSS Output\n *   .element {\n *     background-color: #a8dfc9;\n *   }\n */\n/**\n * Mixes a color with black. It's different from darken()\n *\n * @param {color} $color\n * @param {number (percentage)} $percent [The amount of black to be mixed in]\n * @return {color}\n *\n * @example\n *   .element {\n *     background-color: shade(#ffbb52, 60%);\n *   }\n *\n *   // CSS Output\n *   .element {\n *     background-color: #664a20;\n *   }\n */\n/* Prefix */\n/* The Color of O2Team Brand */\n/* Color */\n/* Color PalettC */\n/* Assistant Color */\n/* Border */\n/* Font */\n/* Link */\n/* Disabled cursor */\n/* Shadow */\n/* Button */\n/* Tag */\n/* Checkbox */\n/* Input */\n/* InputNumber */\n/* Switch */\n/* Slider */\n/* Textarea */\n/* Alert */\n/* Badge */\n/* Card */\n/* Collapse */\n/* Loading Bar */\n/* Modal */\n/* Message */\n/* Radio */\n/* Rate */\n/* Select */\n/* Select Dropdown */\n/* Notification */\n/* Popover */\n/* Progress */\n/* Timeline */\n/* Tooltip */\n/* Table */\n/* Breadcrumb */\n/* Dropdown */\n/* Menu */\n/* Pagination */\n/* Tabs */\n/* Steps */\n/**\n * Media queries\n */\n/* Extra small screen / Mobile */\n/* Small screen / Tablet */\n/* Medium screen / Desktop */\n/* Large screen / Wide Desktop */\n/**\n * Grid system\n */\n/* Container sizes */\n/* z-index list */\n/**\n * CSS cubic-bezier timing functions\n * http://bourbon.io/docs/#timing-functions\n */\n/**\n * Mixins\n */\n/* library */\n/**\n * BEM Mixins\n * From https://github.com/alphasights/paint/blob/812fb33c54a50277071f547a3e191cf5fe4fcb3f/styles/tools/_bem.scss\n */\n/**\n * @example scss\n *\n * .element {\n *   @include clearfix;\n * }\n *\n * // CSS Output\n * .element::after {\n *   clear: both;\n *   content: '';\n *   display: block;\n * }\n */\n/**\n * Truncate text and add an ellipsis to represent overflow\n *\n * @param {number} $width [Default 100%]\n * @param {string} $display [Default inline-block] [Sets the display-value of the element]\n */\n/**\n * Hides text to show a background image(a logo, for example)\n *\n * @example\n *   .element {\n *     @include hide-text;\n *   }\n *\n *   // CSS Output\n *   .element {\n *     overflow: hidden;\n *     text-indent: 101%;\n *     white-space: nowrap;\n *   }\n */\n/**\n * Set width and height in a single statement\n *\n * @param {number (with unit) | string} $width\n * @param {number (with unit) | string} $height [default $width]\n */\n/**\n * Mixes a color with white. It's different from lighten()\n *\n * @param {color} $color\n * @param {number (percentage)} $percent [The amout of white to be mixed in]\n * @return {color}\n *\n * @example\n *   .element {\n *     background-color: tint(#6ecaa6 , 40%);\n *   }\n *\n *   // CSS Output\n *   .element {\n *     background-color: #a8dfc9;\n *   }\n */\n/**\n * Mixes a color with black. It's different from darken()\n *\n * @param {color} $color\n * @param {number (percentage)} $percent [The amount of black to be mixed in]\n * @return {color}\n *\n * @example\n *   .element {\n *     background-color: shade(#ffbb52, 60%);\n *   }\n *\n *   // CSS Output\n *   .element {\n *     background-color: #664a20;\n *   }\n */\n/**\n * Vue transitions\n */\n.fade-enter-active {\n  -webkit-transition: opacity 0.3s ease-out;\n  -o-transition: opacity 0.3s ease-out;\n  -moz-transition: opacity 0.3s ease-out;\n  transition: opacity 0.3s ease-out; }\n\n.fade-leave-active {\n  -webkit-transition: opacity 0.2s ease-out;\n  -o-transition: opacity 0.2s ease-out;\n  -moz-transition: opacity 0.2s ease-out;\n  transition: opacity 0.2s ease-out; }\n\n.fade-enter,\n.fade-leave-active {\n  opacity: 0; }\n\n/**\n * Variables\n */\n.bg-c-brand {\n  background-color: #78A4F4; }\n  .bg-c-brand-light {\n    background-color: #93b6f6; }\n  .bg-c-brand-dark {\n    background-color: #729ce8; }\n\n.app {\n  padding: 110px 30px 48px; }\n\n/**\n * Base\n */\n.at-container {\n  position: relative;\n  height: -webkit-calc(100vh - 158px);\n  height: -moz-calc(100vh - 158px);\n  height: calc(100vh - 158px);\n  background-color: #fff;\n  -webkit-box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);\n     -moz-box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);\n          box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);\n  overflow: hidden; }\n\n/**\n * Component - Preview & Code sample\n */\n.at-component__container {\n  margin: 16px 0; }\n\n.at-component__sample {\n  position: relative;\n  padding: 32px;\n  border: 1px solid #e2ecf4;\n  -moz-border-radius: 4px 4px 0 0;\n       border-radius: 4px 4px 0 0;\n  background-color: #FFF; }\n  .at-component__sample .demo-desc {\n    margin: 8px 0;\n    color: #8dabc4; }\n\n.at-component__code {\n  position: relative;\n  border: 1px solid #e2ecf4;\n  -moz-border-radius: 4px;\n       border-radius: 4px; }\n  .at-component__code pre {\n    margin: 0 !important; }\n    .at-component__code pre code {\n      width: 100%;\n      font-size: 14px;\n      line-height: 1.5;\n      background: none;\n      white-space: pre;\n      overflow-x: scroll;\n      overflow-y: hidden;\n      -ms-overflow-style: -ms-autohiding-scrollbar; }\n\n.at-component__code-toggle {\n  display: block;\n  padding: 8px 12px;\n  color: #C5D9E8;\n  font-size: 12px;\n  text-align: center;\n  background-color: #FAFBFC;\n  cursor: pointer; }\n\n.at-markdown {\n  position: relative;\n  padding: 32px 48px 48px;\n  height: 100%;\n  overflow: auto; }\n  .at-markdown--demo {\n    padding-right: 420px; }\n  .at-markdown img {\n    vertical-align: middle; }\n  .at-markdown table {\n    display: block;\n    width: 100%;\n    background-color: #fff;\n    color: #5e6d82;\n    font-size: 14px;\n    border-collapse: collapse;\n    overflow: auto;\n    -webkit-overflow-scrolling: touch; }\n    .at-markdown table th {\n      text-align: left;\n      border-top: 1px solid #f3f7fa;\n      background-color: #fafbfc; }\n    .at-markdown table td,\n    .at-markdown table th {\n      border-bottom: 1px solid #f3f7fa;\n      padding: 10px 8px; }\n      .at-markdown table td:first-child,\n      .at-markdown table th:first-child {\n        padding-left: 10px; }\n  .at-markdown > div {\n    margin: 0 auto; }\n    .at-markdown > div > h1,\n    .at-markdown > div > h2,\n    .at-markdown > div > h3,\n    .at-markdown > div > h4 {\n      margin: 16px 0;\n      line-height: 1.5; }\n    .at-markdown > div > h1 {\n      margin-top: 0;\n      font-size: 24px; }\n    .at-markdown > div > h2,\n    .at-markdown > div > h3 {\n      margin-top: 24px; }\n    .at-markdown > div > hr {\n      margin: 1.2em 0;\n      border: 0;\n      border-bottom: 1px solid #C5D9E8; }\n    .at-markdown > div > p {\n      padding: 0;\n      line-height: 1.7; }\n      .at-markdown > div > p + p {\n        margin-top: 8px; }\n    .at-markdown > div code {\n      padding: 0.3em 0.5em;\n      font-size: 0.9em;\n      vertical-align: middle;\n      border: 1px solid #ECECEC;\n      -moz-border-radius: 2px;\n           border-radius: 2px;\n      background-color: #F7F7F7; }\n    .at-markdown > div pre {\n      margin: 16px 0;\n      padding: 16px;\n      background-color: #F7F7F7;\n      overflow: auto; }\n      .at-markdown > div pre code {\n        padding: 0;\n        font-size: 1em;\n        border: none;\n        -moz-border-radius: 0;\n             border-radius: 0;\n        background-color: transparent; }\n    .at-markdown > div > blockquote {\n      margin: 16px 0;\n      padding: 0 15px;\n      color: #C9C9C9;\n      border-left: 4px solid #ECECEC; }\n      .at-markdown > div > blockquote p {\n        color: #9B9B9B; }\n    .at-markdown > div > ul {\n      margin: 16px 0;\n      padding-left: 24px;\n      list-style: disc; }\n      .at-markdown > div > ul li {\n        line-height: 1.8; }\n    .at-markdown > div > table {\n      margin: 24px 0; }\n\n/**\n * Typography Component\n */\n.at-component-typo {\n  margin-right: 10px;\n  border: 1px solid #d6e4ef;\n  -moz-border-radius: 4px;\n       border-radius: 4px; }\n  .at-component-typo__show {\n    padding: 35px 20px;\n    font-size: 34px; }\n  .at-component-typo__detail {\n    font-size: 13px;\n    color: #3F536E;\n    padding: 10px 20px;\n    border-top: 1px solid #d6e4ef; }\n    .at-component-typo__detail .note {\n      color: #79879a; }\n\n.at-component-typo-list {\n  border: 1px solid #d6e4ef;\n  -moz-border-radius: 4px;\n       border-radius: 4px;\n  padding: 30px;\n  line-height: 40px; }\n  .at-component-typo-list__item {\n    border-bottom: 1px solid #e2ecf4; }\n    .at-component-typo-list__item .label {\n      color: #C2ABC7; }\n    .at-component-typo-list__item .note {\n      font-size: 14px; }\n\n/**\n * Resource\n */\n.at-resource {\n  margin: 24px 0; }\n  .at-resource__item {\n    display: inline-block;\n    margin: 16px 32px 16px 0;\n    width: 40%;\n    height: 120px;\n    max-width: 360px;\n    min-width: 288px;\n    border: 1px solid #e2ecf4;\n    -moz-border-radius: 4px;\n         border-radius: 4px;\n    overflow: hidden;\n    -webkit-transition: all 0.3s;\n    -o-transition: all 0.3s;\n    -moz-transition: all 0.3s;\n    transition: all 0.3s; }\n    .at-resource__item:hover {\n      border-color: #f3f7fa;\n      background-color: #fff;\n      -webkit-box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);\n         -moz-box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);\n              box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5); }\n    .at-resource__item a {\n      width: 100%;\n      height: 100%;\n      padding: 24px; }\n    .at-resource__item img {\n      display: inline-block;\n      width: 50px;\n      vertical-align: middle; }\n  .at-resource__info {\n    display: inline-block;\n    vertical-align: middle;\n    margin-left: 16px; }\n    .at-resource__info-title {\n      display: block;\n      color: #3F536E;\n      font-size: 16px; }\n    .at-resource__info-desc {\n      display: block;\n      color: #B9B9B9;\n      font-size: 12px; }\n\n/* demo box style */\n.btn-copy {\n  display: none;\n  position: absolute;\n  top: 16px;\n  right: 16px;\n  -webkit-transition: all 0.3s;\n  -o-transition: all 0.3s;\n  -moz-transition: all 0.3s;\n  transition: all 0.3s; }\n  .btn-copy:hover {\n    color: #6190e8;\n    -webkit-transform: scale(1.2);\n       -moz-transform: scale(1.2);\n        -ms-transform: scale(1.2);\n            transform: scale(1.2);\n    cursor: pointer; }\n\n.at-component__code:hover .btn-copy {\n  display: block;\n  -webkit-animation: fadeIn 0.3s both;\n     -moz-animation: fadeIn 0.3s both;\n          animation: fadeIn 0.3s both; }\n\n.demo-frame {\n  position: fixed;\n  top: 150px;\n  right: 50px;\n  width: 375px;\n  height: 756px;\n  background-color: #fff;\n  -webkit-box-shadow: 0 4px 30px 0 rgba(4, 59, 85, 0.1);\n     -moz-box-shadow: 0 4px 30px 0 rgba(4, 59, 85, 0.1);\n          box-shadow: 0 4px 30px 0 rgba(4, 59, 85, 0.1);\n  -moz-border-radius: 60px;\n       border-radius: 60px; }\n  .demo-frame.fixed {\n    position: fixed;\n    z-index: 100;\n    top: 40px;\n    right: 55px; }\n  .demo-frame iframe {\n    padding: 58px 22px 18px;\n    width: 375px;\n    height: 758px; }\n  .demo-frame .iphone-frame {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 375px;\n    height: 758px;\n    background: url(" + escape(__webpack_require__(93)) + ") no-repeat;\n    -moz-background-size: contain;\n         background-size: contain;\n    pointer-events: none; }\n\n.qrcode-menu {\n  position: absolute;\n  top: 40px;\n  right: 60px; }\n\n.qrcode-container,\n.wxapp-container {\n  float: right;\n  position: relative;\n  margin-right: 20px;\n  padding-bottom: 15px;\n  width: 25px;\n  height: 25px;\n  -webkit-box-sizing: content-box;\n     -moz-box-sizing: content-box;\n          box-sizing: content-box; }\n  .qrcode-container h6,\n  .wxapp-container h6 {\n    font-size: 12px;\n    text-align: center; }\n  .qrcode-container > img,\n  .wxapp-container > img {\n    opacity: 0.3;\n    width: 100%;\n    height: 100%; }\n  .qrcode-container .wxapp-qrcode,\n  .wxapp-container .wxapp-qrcode {\n    width: 150px; }\n  .qrcode-container::after,\n  .wxapp-container::after {\n    display: none;\n    content: \"\";\n    z-index: 11;\n    position: absolute;\n    width: 15px;\n    height: 15px;\n    top: -webkit-calc(100% - 8px);\n    top: -moz-calc(100% - 8px);\n    top: calc(100% - 8px);\n    left: 50%;\n    -webkit-transform: translateX(-50%) rotate(45deg);\n       -moz-transform: translateX(-50%) rotate(45deg);\n        -ms-transform: translateX(-50%) rotate(45deg);\n            transform: translateX(-50%) rotate(45deg);\n    background-color: white;\n    -webkit-box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06);\n       -moz-box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06);\n            box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06); }\n  .qrcode-container .qrcode-modal,\n  .wxapp-container .qrcode-modal {\n    display: none;\n    position: absolute;\n    top: 100%;\n    left: -70px;\n    width: 180px;\n    padding: 10px;\n    padding-bottom: 5px;\n    text-align: center;\n    background-color: white;\n    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);\n       -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);\n            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);\n    z-index: 10; }\n    .qrcode-container .qrcode-modal .qrcode-box,\n    .wxapp-container .qrcode-modal .qrcode-box {\n      margin-top: 8px;\n      width: 140px; }\n    .qrcode-container .qrcode-modal .code-image,\n    .wxapp-container .qrcode-modal .code-image {\n      margin: 12px auto; }\n      .qrcode-container .qrcode-modal .code-image canvas,\n      .wxapp-container .qrcode-modal .code-image canvas {\n        max-width: 150px;\n        max-height: 150px; }\n  .qrcode-container:hover::after,\n  .qrcode-container:hover .qrcode-modal,\n  .wxapp-container:hover::after,\n  .wxapp-container:hover .qrcode-modal {\n    display: initial; }\n\n@media screen and (max-width: 767px) {\n  .at-markdown {\n    padding: 0 24px 32px; }\n    .at-markdown .qrcode-menu,\n    .at-markdown .demo-frame {\n      display: none; }\n  .at-component__sample {\n    padding: 16px; } }\n\n@media screen and (min-width: 480px) and (max-height: 980px) {\n  .at-markdown--demo {\n    padding-right: 320px !important; }\n  .demo-frame {\n    -webkit-transform-origin: top right;\n       -moz-transform-origin: top right;\n        -ms-transform-origin: top right;\n            transform-origin: top right;\n    -webkit-transform: scale(0.7);\n       -moz-transform: scale(0.7);\n        -ms-transform: scale(0.7);\n            transform: scale(0.7); } }\n\n@media screen and (max-width: 479px) {\n  .at-container {\n    height: auto; } }\n", ""]);
+exports.push([module.i, "/**\n * Variables\n */\n/**\n * Default Variables\n */\n/**\n * Mixins\n */\n/* library */\n/**\n * BEM Mixins\n * From https://github.com/alphasights/paint/blob/812fb33c54a50277071f547a3e191cf5fe4fcb3f/styles/tools/_bem.scss\n */\n/**\n * @example scss\n *\n * .element {\n *   @include clearfix;\n * }\n *\n * // CSS Output\n * .element::after {\n *   clear: both;\n *   content: '';\n *   display: block;\n * }\n */\n/**\n * Truncate text and add an ellipsis to represent overflow\n *\n * @param {number} $width [Default 100%]\n * @param {string} $display [Default inline-block] [Sets the display-value of the element]\n */\n/**\n * Hides text to show a background image(a logo, for example)\n *\n * @example\n *   .element {\n *     @include hide-text;\n *   }\n *\n *   // CSS Output\n *   .element {\n *     overflow: hidden;\n *     text-indent: 101%;\n *     white-space: nowrap;\n *   }\n */\n/**\n * Set width and height in a single statement\n *\n * @param {number (with unit) | string} $width\n * @param {number (with unit) | string} $height [default $width]\n */\n/**\n * Mixes a color with white. It's different from lighten()\n *\n * @param {color} $color\n * @param {number (percentage)} $percent [The amout of white to be mixed in]\n * @return {color}\n *\n * @example\n *   .element {\n *     background-color: tint(#6ecaa6 , 40%);\n *   }\n *\n *   // CSS Output\n *   .element {\n *     background-color: #a8dfc9;\n *   }\n */\n/**\n * Mixes a color with black. It's different from darken()\n *\n * @param {color} $color\n * @param {number (percentage)} $percent [The amount of black to be mixed in]\n * @return {color}\n *\n * @example\n *   .element {\n *     background-color: shade(#ffbb52, 60%);\n *   }\n *\n *   // CSS Output\n *   .element {\n *     background-color: #664a20;\n *   }\n */\n/* Prefix */\n/* The Color of O2Team Brand */\n/* Color */\n/* Color PalettC */\n/* Assistant Color */\n/* Border */\n/* Font */\n/* Link */\n/* Disabled cursor */\n/* Shadow */\n/* Button */\n/* Tag */\n/* Checkbox */\n/* Input */\n/* InputNumber */\n/* Switch */\n/* Slider */\n/* Textarea */\n/* Alert */\n/* Badge */\n/* Card */\n/* Collapse */\n/* Loading Bar */\n/* Modal */\n/* Message */\n/* Radio */\n/* Rate */\n/* Select */\n/* Select Dropdown */\n/* Notification */\n/* Popover */\n/* Progress */\n/* Timeline */\n/* Tooltip */\n/* Table */\n/* Breadcrumb */\n/* Dropdown */\n/* Menu */\n/* Pagination */\n/* Tabs */\n/* Steps */\n/**\n * Media queries\n */\n/* Extra small screen / Mobile */\n/* Small screen / Tablet */\n/* Medium screen / Desktop */\n/* Large screen / Wide Desktop */\n/**\n * Grid system\n */\n/* Container sizes */\n/* z-index list */\n/**\n * CSS cubic-bezier timing functions\n * http://bourbon.io/docs/#timing-functions\n */\n/**\n * Mixins\n */\n/* library */\n/**\n * BEM Mixins\n * From https://github.com/alphasights/paint/blob/812fb33c54a50277071f547a3e191cf5fe4fcb3f/styles/tools/_bem.scss\n */\n/**\n * @example scss\n *\n * .element {\n *   @include clearfix;\n * }\n *\n * // CSS Output\n * .element::after {\n *   clear: both;\n *   content: '';\n *   display: block;\n * }\n */\n/**\n * Truncate text and add an ellipsis to represent overflow\n *\n * @param {number} $width [Default 100%]\n * @param {string} $display [Default inline-block] [Sets the display-value of the element]\n */\n/**\n * Hides text to show a background image(a logo, for example)\n *\n * @example\n *   .element {\n *     @include hide-text;\n *   }\n *\n *   // CSS Output\n *   .element {\n *     overflow: hidden;\n *     text-indent: 101%;\n *     white-space: nowrap;\n *   }\n */\n/**\n * Set width and height in a single statement\n *\n * @param {number (with unit) | string} $width\n * @param {number (with unit) | string} $height [default $width]\n */\n/**\n * Mixes a color with white. It's different from lighten()\n *\n * @param {color} $color\n * @param {number (percentage)} $percent [The amout of white to be mixed in]\n * @return {color}\n *\n * @example\n *   .element {\n *     background-color: tint(#6ecaa6 , 40%);\n *   }\n *\n *   // CSS Output\n *   .element {\n *     background-color: #a8dfc9;\n *   }\n */\n/**\n * Mixes a color with black. It's different from darken()\n *\n * @param {color} $color\n * @param {number (percentage)} $percent [The amount of black to be mixed in]\n * @return {color}\n *\n * @example\n *   .element {\n *     background-color: shade(#ffbb52, 60%);\n *   }\n *\n *   // CSS Output\n *   .element {\n *     background-color: #664a20;\n *   }\n */\n/**\n * Vue transitions\n */\n.fade-enter-active {\n  -webkit-transition: opacity 0.3s ease-out;\n  -o-transition: opacity 0.3s ease-out;\n  -moz-transition: opacity 0.3s ease-out;\n  transition: opacity 0.3s ease-out; }\n\n.fade-leave-active {\n  -webkit-transition: opacity 0.2s ease-out;\n  -o-transition: opacity 0.2s ease-out;\n  -moz-transition: opacity 0.2s ease-out;\n  transition: opacity 0.2s ease-out; }\n\n.fade-enter,\n.fade-leave-active {\n  opacity: 0; }\n\n/**\n * Variables\n */\n.bg-c-brand {\n  background-color: #78A4F4; }\n  .bg-c-brand-light {\n    background-color: #93b6f6; }\n  .bg-c-brand-dark {\n    background-color: #729ce8; }\n\n.app {\n  padding: 110px 30px 48px; }\n\n/**\n * Base\n */\n.at-container {\n  position: relative;\n  height: -webkit-calc(100vh - 158px);\n  height: -moz-calc(100vh - 158px);\n  height: calc(100vh - 158px);\n  background-color: #fff;\n  -webkit-box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);\n     -moz-box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);\n          box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);\n  overflow: hidden; }\n\n/**\n * Component - Preview & Code sample\n */\n.at-component__container {\n  margin: 16px 0; }\n\n.at-component__sample {\n  position: relative;\n  padding: 32px;\n  border: 1px solid #e2ecf4;\n  -moz-border-radius: 4px 4px 0 0;\n       border-radius: 4px 4px 0 0;\n  background-color: #FFF; }\n  .at-component__sample .demo-desc {\n    margin: 8px 0;\n    color: #8dabc4; }\n\n.at-component__code {\n  position: relative;\n  border: 1px solid #e2ecf4;\n  -moz-border-radius: 4px;\n       border-radius: 4px; }\n  .at-component__code pre {\n    margin: 0 !important; }\n    .at-component__code pre code {\n      width: 100%;\n      font-size: 14px;\n      line-height: 1.5;\n      background: none;\n      white-space: pre;\n      overflow-x: scroll;\n      overflow-y: hidden;\n      -ms-overflow-style: -ms-autohiding-scrollbar; }\n\n.at-component__code-toggle {\n  display: block;\n  padding: 8px 12px;\n  color: #C5D9E8;\n  font-size: 12px;\n  text-align: center;\n  background-color: #FAFBFC;\n  cursor: pointer; }\n\n.at-markdown {\n  position: relative;\n  padding: 32px 48px 48px;\n  height: 100%;\n  overflow: auto; }\n  .at-markdown--demo {\n    padding-right: 420px; }\n  .at-markdown img {\n    vertical-align: middle; }\n  .at-markdown table {\n    display: block;\n    width: 100%;\n    background-color: #fff;\n    color: #5e6d82;\n    font-size: 14px;\n    border-collapse: collapse;\n    overflow: auto;\n    -webkit-overflow-scrolling: touch; }\n    .at-markdown table th {\n      text-align: left;\n      border-top: 1px solid #f3f7fa;\n      background-color: #fafbfc; }\n    .at-markdown table td,\n    .at-markdown table th {\n      border-bottom: 1px solid #f3f7fa;\n      padding: 10px 8px; }\n      .at-markdown table td:first-child,\n      .at-markdown table th:first-child {\n        padding-left: 10px; }\n  .at-markdown > div {\n    margin: 0 auto; }\n    .at-markdown > div > h1,\n    .at-markdown > div > h2,\n    .at-markdown > div > h3,\n    .at-markdown > div > h4 {\n      margin: 16px 0;\n      line-height: 1.5; }\n    .at-markdown > div > h1 {\n      margin-top: 0;\n      font-size: 24px; }\n    .at-markdown > div > h2,\n    .at-markdown > div > h3 {\n      margin-top: 24px; }\n    .at-markdown > div > hr {\n      margin: 1.2em 0;\n      border: 0;\n      border-bottom: 1px solid #C5D9E8; }\n    .at-markdown > div > p {\n      padding: 0;\n      line-height: 1.7; }\n      .at-markdown > div > p + p {\n        margin-top: 8px; }\n    .at-markdown > div code {\n      padding: 0.3em 0.5em;\n      font-size: 0.9em;\n      vertical-align: middle;\n      border: 1px solid #ECECEC;\n      -moz-border-radius: 2px;\n           border-radius: 2px;\n      background-color: #F7F7F7; }\n    .at-markdown > div pre {\n      margin: 16px 0;\n      padding: 16px;\n      background-color: #F7F7F7;\n      overflow: auto; }\n      .at-markdown > div pre code {\n        padding: 0;\n        font-size: 1em;\n        border: none;\n        -moz-border-radius: 0;\n             border-radius: 0;\n        background-color: transparent; }\n    .at-markdown > div > blockquote {\n      margin: 16px 0;\n      padding: 0 15px;\n      color: #C9C9C9;\n      border-left: 4px solid #ECECEC; }\n      .at-markdown > div > blockquote p {\n        color: #9B9B9B; }\n    .at-markdown > div > ul {\n      margin: 16px 0;\n      padding-left: 24px;\n      list-style: disc; }\n      .at-markdown > div > ul li {\n        line-height: 1.8; }\n    .at-markdown > div > table {\n      margin: 24px 0; }\n\n/**\n * Typography Component\n */\n.at-component-typo {\n  margin-right: 10px;\n  border: 1px solid #d6e4ef;\n  -moz-border-radius: 4px;\n       border-radius: 4px; }\n  .at-component-typo__show {\n    padding: 35px 20px;\n    font-size: 34px; }\n  .at-component-typo__detail {\n    font-size: 13px;\n    color: #3F536E;\n    padding: 10px 20px;\n    border-top: 1px solid #d6e4ef; }\n    .at-component-typo__detail .note {\n      color: #79879a; }\n\n.at-component-typo-list {\n  border: 1px solid #d6e4ef;\n  -moz-border-radius: 4px;\n       border-radius: 4px;\n  padding: 30px;\n  line-height: 40px; }\n  .at-component-typo-list__item {\n    border-bottom: 1px solid #e2ecf4; }\n    .at-component-typo-list__item .label {\n      color: #C2ABC7; }\n    .at-component-typo-list__item .note {\n      font-size: 14px; }\n\n/**\n * Resource\n */\n.at-resource {\n  margin: 24px 0; }\n  .at-resource__item {\n    display: inline-block;\n    margin: 16px 32px 16px 0;\n    width: 40%;\n    height: 120px;\n    max-width: 360px;\n    min-width: 288px;\n    border: 1px solid #e2ecf4;\n    -moz-border-radius: 4px;\n         border-radius: 4px;\n    overflow: hidden;\n    -webkit-transition: all 0.3s;\n    -o-transition: all 0.3s;\n    -moz-transition: all 0.3s;\n    transition: all 0.3s; }\n    .at-resource__item:hover {\n      border-color: #f3f7fa;\n      background-color: #fff;\n      -webkit-box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);\n         -moz-box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);\n              box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5); }\n    .at-resource__item a {\n      width: 100%;\n      height: 100%;\n      padding: 24px; }\n    .at-resource__item img {\n      display: inline-block;\n      width: 50px;\n      vertical-align: middle; }\n  .at-resource__info {\n    display: inline-block;\n    vertical-align: middle;\n    margin-left: 16px; }\n    .at-resource__info-title {\n      display: block;\n      color: #3F536E;\n      font-size: 16px; }\n    .at-resource__info-desc {\n      display: block;\n      color: #B9B9B9;\n      font-size: 12px; }\n\n/* demo box style */\n.btn-copy {\n  display: none;\n  position: absolute;\n  top: 16px;\n  right: 16px;\n  -webkit-transition: all 0.3s;\n  -o-transition: all 0.3s;\n  -moz-transition: all 0.3s;\n  transition: all 0.3s; }\n  .btn-copy:hover {\n    color: #6190e8;\n    -webkit-transform: scale(1.2);\n       -moz-transform: scale(1.2);\n        -ms-transform: scale(1.2);\n            transform: scale(1.2);\n    cursor: pointer; }\n\n.at-component__code:hover .btn-copy {\n  display: block;\n  -webkit-animation: fadeIn 0.3s both;\n     -moz-animation: fadeIn 0.3s both;\n          animation: fadeIn 0.3s both; }\n\n.demo-frame {\n  position: fixed;\n  top: 150px;\n  right: 50px;\n  width: 375px;\n  height: 756px;\n  background-color: #fff;\n  -webkit-box-shadow: 0 4px 30px 0 rgba(4, 59, 85, 0.1);\n     -moz-box-shadow: 0 4px 30px 0 rgba(4, 59, 85, 0.1);\n          box-shadow: 0 4px 30px 0 rgba(4, 59, 85, 0.1);\n  -moz-border-radius: 60px;\n       border-radius: 60px; }\n  .demo-frame.fixed {\n    position: fixed;\n    z-index: 100;\n    top: 40px;\n    right: 55px; }\n  .demo-frame iframe {\n    padding: 58px 22px 18px;\n    width: 375px;\n    height: 758px; }\n  .demo-frame .iphone-frame {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 375px;\n    height: 758px;\n    background: url(" + escape(__webpack_require__(93)) + ") no-repeat;\n    -moz-background-size: contain;\n         background-size: contain;\n    pointer-events: none; }\n\n.qrcode-menu {\n  position: absolute;\n  top: 40px;\n  right: 60px; }\n\n.qrcode-container,\n.wxapp-container {\n  float: right;\n  position: relative;\n  margin-right: 20px;\n  padding-bottom: 15px;\n  width: 25px;\n  height: 25px;\n  -webkit-box-sizing: content-box;\n     -moz-box-sizing: content-box;\n          box-sizing: content-box; }\n  .qrcode-container h6,\n  .wxapp-container h6 {\n    font-size: 12px;\n    text-align: center; }\n  .qrcode-container > img,\n  .wxapp-container > img {\n    opacity: 0.3;\n    width: 100%;\n    height: 100%; }\n  .qrcode-container .wxapp-qrcode,\n  .wxapp-container .wxapp-qrcode {\n    width: 150px; }\n  .qrcode-container::after,\n  .wxapp-container::after {\n    display: none;\n    content: \"\";\n    z-index: 11;\n    position: absolute;\n    width: 15px;\n    height: 15px;\n    top: -webkit-calc(100% - 8px);\n    top: -moz-calc(100% - 8px);\n    top: calc(100% - 8px);\n    left: 50%;\n    -webkit-transform: translateX(-50%) rotate(45deg);\n       -moz-transform: translateX(-50%) rotate(45deg);\n        -ms-transform: translateX(-50%) rotate(45deg);\n            transform: translateX(-50%) rotate(45deg);\n    background-color: white;\n    -webkit-box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06);\n       -moz-box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06);\n            box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06); }\n  .qrcode-container .qrcode-modal,\n  .wxapp-container .qrcode-modal {\n    display: none;\n    position: absolute;\n    top: 100%;\n    left: -70px;\n    width: 180px;\n    padding: 10px;\n    padding-bottom: 5px;\n    text-align: center;\n    background-color: white;\n    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);\n       -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);\n            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);\n    z-index: 10; }\n    .qrcode-container .qrcode-modal .qrcode-box,\n    .wxapp-container .qrcode-modal .qrcode-box {\n      margin-top: 8px;\n      width: 140px; }\n    .qrcode-container .qrcode-modal .code-image,\n    .wxapp-container .qrcode-modal .code-image {\n      margin: 12px auto; }\n      .qrcode-container .qrcode-modal .code-image canvas,\n      .wxapp-container .qrcode-modal .code-image canvas {\n        max-width: 150px;\n        max-height: 150px; }\n  .qrcode-container:hover::after,\n  .qrcode-container:hover .qrcode-modal,\n  .wxapp-container:hover::after,\n  .wxapp-container:hover .qrcode-modal {\n    display: initial; }\n\n/**\n * Resource\n */\n.at-resource {\n  margin: 24px 0; }\n  .at-resource__item {\n    display: inline-block;\n    margin: 16px 32px 16px 0;\n    width: 40%;\n    height: 120px;\n    max-width: 360px;\n    min-width: 288px;\n    border: 1px solid #e2ecf4;\n    -moz-border-radius: 4px;\n         border-radius: 4px;\n    overflow: hidden;\n    -webkit-transition: all .3s;\n    -o-transition: all .3s;\n    -moz-transition: all .3s;\n    transition: all .3s; }\n    .at-resource__item:hover {\n      border-color: #f3f7fa;\n      background-color: #fff;\n      -webkit-box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);\n         -moz-box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);\n              box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5); }\n    .at-resource__item a {\n      width: 100%;\n      height: 100%;\n      padding: 24px; }\n    .at-resource__item img {\n      display: inline-block;\n      width: 50px;\n      vertical-align: middle; }\n  .at-resource__info {\n    display: inline-block;\n    vertical-align: middle;\n    margin-left: 16px; }\n    .at-resource__info-title {\n      display: block;\n      color: #3F536E;\n      font-size: 16px; }\n    .at-resource__info-desc {\n      display: block;\n      color: #B9B9B9;\n      font-size: 12px; }\n\n@media screen and (max-width: 767px) {\n  .at-markdown {\n    padding: 0 24px 32px; }\n    .at-markdown .qrcode-menu,\n    .at-markdown .demo-frame {\n      display: none; }\n  .at-component__sample {\n    padding: 16px; } }\n\n@media screen and (min-width: 480px) and (max-height: 980px) {\n  .at-markdown--demo {\n    padding-right: 320px !important; }\n  .demo-frame {\n    -webkit-transform-origin: top right;\n       -moz-transform-origin: top right;\n        -ms-transform-origin: top right;\n            transform-origin: top right;\n    -webkit-transform: scale(0.7);\n       -moz-transform: scale(0.7);\n        -ms-transform: scale(0.7);\n            transform: scale(0.7); } }\n\n@media screen and (max-width: 479px) {\n  .at-container {\n    height: auto; } }\n", ""]);
 
 // exports
 
@@ -11219,61 +11222,65 @@ var map = {
 	"./Rate/": 228,
 	"./Rate/index": 228,
 	"./Rate/index.jsx": 228,
-	"./SearchBar": 230,
-	"./SearchBar/": 230,
-	"./SearchBar/index": 230,
-	"./SearchBar/index.jsx": 230,
-	"./SegmentedControl": 232,
-	"./SegmentedControl/": 232,
-	"./SegmentedControl/index": 232,
-	"./SegmentedControl/index.jsx": 232,
-	"./Slider": 234,
-	"./Slider/": 234,
-	"./Slider/index": 234,
-	"./Slider/index.jsx": 234,
-	"./Steps": 236,
-	"./Steps/": 236,
-	"./Steps/index": 236,
-	"./Steps/index.jsx": 236,
-	"./SwipeAction": 238,
-	"./SwipeAction/": 238,
-	"./SwipeAction/index": 238,
-	"./SwipeAction/index.jsx": 238,
-	"./Swiper": 240,
-	"./Swiper/": 240,
-	"./Swiper/index": 240,
-	"./Swiper/index.jsx": 240,
-	"./Switch": 242,
-	"./Switch/": 242,
-	"./Switch/index": 242,
-	"./Switch/index.jsx": 242,
-	"./TabBar": 244,
-	"./TabBar/": 244,
-	"./TabBar/index": 244,
-	"./TabBar/index.jsx": 244,
-	"./Tabs": 246,
-	"./Tabs/": 246,
-	"./Tabs/index": 246,
-	"./Tabs/index.jsx": 246,
-	"./Tag": 248,
-	"./Tag/": 248,
-	"./Tag/index": 248,
-	"./Tag/index.jsx": 248,
-	"./Tag/style.scss": 250,
-	"./Textarea": 252,
-	"./Textarea/": 252,
-	"./Textarea/index": 252,
-	"./Textarea/index.jsx": 252,
-	"./Timeline": 254,
-	"./Timeline/": 254,
-	"./Timeline/index": 254,
-	"./Timeline/index.jsx": 254,
-	"./Timeline/style.scss": 256,
-	"./Toast": 258,
-	"./Toast/": 258,
-	"./Toast/index": 258,
-	"./Toast/index.jsx": 258,
-	"./Toast/index.scss": 260
+	"./Resource": 230,
+	"./Resource/": 230,
+	"./Resource/index": 230,
+	"./Resource/index.jsx": 230,
+	"./SearchBar": 232,
+	"./SearchBar/": 232,
+	"./SearchBar/index": 232,
+	"./SearchBar/index.jsx": 232,
+	"./SegmentedControl": 234,
+	"./SegmentedControl/": 234,
+	"./SegmentedControl/index": 234,
+	"./SegmentedControl/index.jsx": 234,
+	"./Slider": 236,
+	"./Slider/": 236,
+	"./Slider/index": 236,
+	"./Slider/index.jsx": 236,
+	"./Steps": 238,
+	"./Steps/": 238,
+	"./Steps/index": 238,
+	"./Steps/index.jsx": 238,
+	"./SwipeAction": 240,
+	"./SwipeAction/": 240,
+	"./SwipeAction/index": 240,
+	"./SwipeAction/index.jsx": 240,
+	"./Swiper": 242,
+	"./Swiper/": 242,
+	"./Swiper/index": 242,
+	"./Swiper/index.jsx": 242,
+	"./Switch": 244,
+	"./Switch/": 244,
+	"./Switch/index": 244,
+	"./Switch/index.jsx": 244,
+	"./TabBar": 246,
+	"./TabBar/": 246,
+	"./TabBar/index": 246,
+	"./TabBar/index.jsx": 246,
+	"./Tabs": 248,
+	"./Tabs/": 248,
+	"./Tabs/index": 248,
+	"./Tabs/index.jsx": 248,
+	"./Tag": 250,
+	"./Tag/": 250,
+	"./Tag/index": 250,
+	"./Tag/index.jsx": 250,
+	"./Tag/style.scss": 252,
+	"./Textarea": 254,
+	"./Textarea/": 254,
+	"./Textarea/index": 254,
+	"./Textarea/index.jsx": 254,
+	"./Timeline": 256,
+	"./Timeline/": 256,
+	"./Timeline/index": 256,
+	"./Timeline/index.jsx": 256,
+	"./Timeline/style.scss": 258,
+	"./Toast": 260,
+	"./Toast/": 260,
+	"./Toast/index": 260,
+	"./Toast/index.jsx": 260,
+	"./Toast/index.scss": 262
 };
 
 
@@ -26424,7 +26431,167 @@ function (_Nerv$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nervjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _md_search_bar_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(231);
+/* harmony import */ var _md_resource_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(231);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+var Resource =
+/*#__PURE__*/
+function (_Nerv$Component) {
+  _inherits(Resource, _Nerv$Component);
+
+  function Resource() {
+    _classCallCheck(this, Resource);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Resource).apply(this, arguments));
+  }
+
+  _createClass(Resource, [{
+    key: "render",
+    value: function render() {
+      return nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"](_md_resource_md__WEBPACK_IMPORTED_MODULE_1__["default"], null);
+    }
+  }]);
+
+  return Resource;
+}(nervjs__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Resource);
+
+/***/ }),
+/* 231 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nervjs__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var copy_to_clipboard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(100);
+/* harmony import */ var copy_to_clipboard__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(copy_to_clipboard__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+undefined;
+
+var MarkdownItReactComponent =
+/*#__PURE__*/
+function (_Nerv$Component) {
+  _inherits(MarkdownItReactComponent, _Nerv$Component);
+
+  function MarkdownItReactComponent(props) {
+    var _this;
+
+    _classCallCheck(this, MarkdownItReactComponent);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(MarkdownItReactComponent).call(this, props));
+    _this.state = {};
+    Object.assign(_assertThisInitialized(_this), props.methods);
+    return _this;
+  }
+
+  _createClass(MarkdownItReactComponent, [{
+    key: "handleToggleCode",
+    value: function handleToggleCode(flag) {
+      var state = {};
+      state['showCode' + flag] = !this.state['showCode' + flag];
+      this.setState(state);
+    }
+  }, {
+    key: "handleCopyCode",
+    value: function handleCopyCode(code) {
+      copy_to_clipboard__WEBPACK_IMPORTED_MODULE_1___default()(code);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+        className: "wrap"
+      }, nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "\u8BBE\u8BA1\u8D44\u6E90"), nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("hr", null), nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "\u63D0\u4F9B ", nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("code", null, "Taro-UI"), " \u7684\u89C6\u89C9\u76F8\u5173\u8D44\u6E90\u4E0B\u8F7D"), nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+        className: "at-resource"
+      }, nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+        className: "at-resource__item"
+      }, nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
+        href: "https://storage.360buyimg.com/taro-resource/taro-ui/TaroUI.sketch.zip",
+        className: "flex flex-middle"
+      }, nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("span", {
+        className: "at-resource__logo"
+      }, nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", {
+        src: "https://storage.360buyimg.com/mtd/home/sketch1565263021806.png"
+      })), nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("span", {
+        className: "at-resource__info"
+      }, nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("span", {
+        className: "at-resource__info-title"
+      }, "Sketch Library"), nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("span", {
+        className: "at-resource__info-desc"
+      }, "Taro UI \u7EC4\u4EF6 Sketch \u89C6\u89C9\u7A3F")))), nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+        className: "at-resource__item"
+      }, nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
+        href: "http://storage.360buyimg.com/mtd/home/taroui-rplib1565263474229.zip",
+        className: "flex flex-middle"
+      }, nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("span", {
+        className: "at-resource__logo"
+      }, nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", {
+        src: "https://storage.360buyimg.com/mtd/home/axure31565263422240.png"
+      })), nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("span", {
+        className: "at-resource__info"
+      }, nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("span", {
+        className: "at-resource__info-title"
+      }, "Axure Library"), nervjs__WEBPACK_IMPORTED_MODULE_0__["createElement"]("span", {
+        className: "at-resource__info-desc"
+      }, "Taro UI \u7EC4\u4EF6\u7684 Axure \u90E8\u4EF6\u5E93"))))));
+    }
+  }]);
+
+  return MarkdownItReactComponent;
+}(nervjs__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+;
+/* harmony default export */ __webpack_exports__["default"] = (MarkdownItReactComponent);
+
+/***/ }),
+/* 232 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nervjs__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _md_search_bar_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(233);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26470,7 +26637,7 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (SearchBarView);
 
 /***/ }),
-/* 231 */
+/* 233 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26791,14 +26958,14 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (MarkdownItReactComponent);
 
 /***/ }),
-/* 232 */
+/* 234 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nervjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _md_segmented_control_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(233);
+/* harmony import */ var _md_segmented_control_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(235);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26844,7 +27011,7 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (SegmentedControlView);
 
 /***/ }),
-/* 233 */
+/* 235 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27117,14 +27284,14 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (MarkdownItReactComponent);
 
 /***/ }),
-/* 234 */
+/* 236 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nervjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _md_slider_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(235);
+/* harmony import */ var _md_slider_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(237);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27170,7 +27337,7 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (SliderView);
 
 /***/ }),
-/* 235 */
+/* 237 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27421,14 +27588,14 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (MarkdownItReactComponent);
 
 /***/ }),
-/* 236 */
+/* 238 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nervjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _md_steps_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(237);
+/* harmony import */ var _md_steps_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(239);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27474,7 +27641,7 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (StepsView);
 
 /***/ }),
-/* 237 */
+/* 239 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27913,14 +28080,14 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (MarkdownItReactComponent);
 
 /***/ }),
-/* 238 */
+/* 240 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nervjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _md_swipe_action_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(239);
+/* harmony import */ var _md_swipe_action_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(241);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27966,7 +28133,7 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (SwipeActionView);
 
 /***/ }),
-/* 239 */
+/* 241 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28471,14 +28638,14 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (MarkdownItReactComponent);
 
 /***/ }),
-/* 240 */
+/* 242 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nervjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _md_swiper_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(241);
+/* harmony import */ var _md_swiper_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(243);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28524,7 +28691,7 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (SwiperView);
 
 /***/ }),
-/* 241 */
+/* 243 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28929,14 +29096,14 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (MarkdownItReactComponent);
 
 /***/ }),
-/* 242 */
+/* 244 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nervjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _md_switch_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(243);
+/* harmony import */ var _md_switch_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(245);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28982,7 +29149,7 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (SwitchView);
 
 /***/ }),
-/* 243 */
+/* 245 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29131,14 +29298,14 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (MarkdownItReactComponent);
 
 /***/ }),
-/* 244 */
+/* 246 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nervjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _md_tabbar_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(245);
+/* harmony import */ var _md_tabbar_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(247);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29184,7 +29351,7 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (TabBarView);
 
 /***/ }),
-/* 245 */
+/* 247 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29737,14 +29904,14 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (MarkdownItReactComponent);
 
 /***/ }),
-/* 246 */
+/* 248 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nervjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _md_tabs_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(247);
+/* harmony import */ var _md_tabs_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(249);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29790,7 +29957,7 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (TabsView);
 
 /***/ }),
-/* 247 */
+/* 249 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30661,14 +30828,14 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (MarkdownItReactComponent);
 
 /***/ }),
-/* 248 */
+/* 250 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nervjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _md_tag_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(249);
+/* harmony import */ var _md_tag_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(251);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -30714,7 +30881,7 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (TagView);
 
 /***/ }),
-/* 249 */
+/* 251 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30963,11 +31130,11 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (MarkdownItReactComponent);
 
 /***/ }),
-/* 250 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(251);
+var content = __webpack_require__(253);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -30988,7 +31155,7 @@ if(content.locals) module.exports = content.locals;
 if(false) {}
 
 /***/ }),
-/* 251 */
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(49)(false);
@@ -31002,14 +31169,14 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 252 */
+/* 254 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nervjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _md_textarea_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(253);
+/* harmony import */ var _md_textarea_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(255);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -31055,7 +31222,7 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (TextareaView);
 
 /***/ }),
-/* 253 */
+/* 255 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31256,14 +31423,14 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (MarkdownItReactComponent);
 
 /***/ }),
-/* 254 */
+/* 256 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nervjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _md_timeline_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(255);
+/* harmony import */ var _md_timeline_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(257);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -31309,7 +31476,7 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (TimelineView);
 
 /***/ }),
-/* 255 */
+/* 257 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31678,11 +31845,11 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (MarkdownItReactComponent);
 
 /***/ }),
-/* 256 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(257);
+var content = __webpack_require__(259);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -31703,7 +31870,7 @@ if(content.locals) module.exports = content.locals;
 if(false) {}
 
 /***/ }),
-/* 257 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(49)(false);
@@ -31717,14 +31884,14 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 258 */
+/* 260 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var nervjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nervjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _md_toast_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(259);
+/* harmony import */ var _md_toast_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(261);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -31770,7 +31937,7 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (ToastView);
 
 /***/ }),
-/* 259 */
+/* 261 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31895,11 +32062,11 @@ function (_Nerv$Component) {
 /* harmony default export */ __webpack_exports__["default"] = (MarkdownItReactComponent);
 
 /***/ }),
-/* 260 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(261);
+var content = __webpack_require__(263);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -31920,7 +32087,7 @@ if(content.locals) module.exports = content.locals;
 if(false) {}
 
 /***/ }),
-/* 261 */
+/* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(49)(false);
@@ -31934,7 +32101,7 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 262 */
+/* 264 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
